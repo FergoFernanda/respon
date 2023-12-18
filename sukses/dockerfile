@@ -1,0 +1,2 @@
+FROM httpd:latest
+RUN apt update && apt install -y wget zip && wget -c https://www.free-css.com/assets/files/free-css-templates/download/page295/edgecut.zip && unzip edgecut.zip && cp -rf edgecut-html/* ./htdocs
